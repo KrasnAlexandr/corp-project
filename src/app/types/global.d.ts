@@ -12,7 +12,9 @@ declare module "*.jpg";
 declare module "*.jpeg";
 
 declare module "*.svg" {
-  const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
-  export default content;
+  const SVG: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
+  export default SVG;
 }
+
+declare const __IS_DEV__: boolean;
 
